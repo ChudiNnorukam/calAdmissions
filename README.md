@@ -1,7 +1,5 @@
 # An Analysis of Sociocultural and Temporal Trends in UC Admissions Data
 
-*11/28/18*
-
 ## Authors
 
 Aurum Kathuria, Manan Khattar, Chudi Nnorukam, Melissa Wong, Alice Wu. Repo available at https://github.com/mk1123/calAdmissions. 

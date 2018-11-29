@@ -56,13 +56,13 @@ This proves our observation that Alameda County and Santa Clara County "overachi
 
 To explore this further, we plotted the relationship between admitted, enrolled, and applied statistics for each county, vs. the average household wealth of the county. Specifically, we first graphed the raw sum for the admitted, enrolled, and applied statistics for each county. Then, we considered 3 other subparameters: the percentage of students admitted who applied, the percentage of students enrolled who admitted, and the percentage of students enrolled who applied. 
 
-<img src="images/Natural Scale Raw Numbers, 2016 Data.png" width="500px" >
+<img src="images/Natural%20Scale%20Raw%20Numbers,%202016%20Data.png" width="500px" >
 
 
 
 Interestingly, as the median household income of the county increases, the raw number of students that apply seems to increase dramatically, while the number of students who are admitted and the number of students that are enrolled seems to stay relatively constant. This implies that the values for each of our subparameters—admitted/applied, enrolled/applied, enrolled/admitted—should decrease as the wealth of the county increases, and indeed this is the case:
 
-<img src="images/Natural Scale Percentage, 2016 Data.png" width="500px" >
+<img src="images/Natural%20Scale%20Percentage,%202016%20Data.png" width="500px" >
 
 
 
@@ -154,13 +154,13 @@ This Grant is the largest public grant that the UC system has received in over h
 
 We decided to model the problem in terms of the model that we created before: Average Household Income vs. the three subparameters that we considered before (admitted to applied, enrolled to admitted, and enrolled to admitted): 
 
-<img src="images/Natural Scale Percentage, 2016 Data.png" width="500px" >
+<img src="images/Natural%20Scale%20Percentage,%202016%20Data.png" width="500px" >
 
 
 
 After that, we plotted the admissions data for the year 1999 and 2001 (before and after the Grant) and correlated it with average household income in the county at that time: 
 
-<img src="images/Natural Scale Percentage in 1999.png" width="500px" >
+<img src="images/Natural%20Scale%20Percentage%20in%201999.png" width="500px" >
 
 
 
@@ -176,7 +176,7 @@ Linear Regression Equation: -1.38x + 68.43
 r^2: 0.0223 p-value: 0.3919
 ```
 
-<img src="images/Natural Scale Percentage in 2001.png" width="500px" >
+<img src="images/Natural%20Scale%20Percentage%20in%202001.png" width="500px" >
 
 ```python
 Regression Equations For: admitted to applied
@@ -194,7 +194,7 @@ r^2: 0.0483 p-value: 0.198
 
 Just from the eye test, the slopes across the graphs seem to be significantly differing slopes, especially the `admitted to applied` lineplot:
 
-<img src="images/Natural Scale Percentage in 1999.png" width="400px" ><img src="images/Natural Scale Percentage in 2001.png" width="400px" >
+<img src="images/Natural%20Scale%20Percentage%20in%201999.png" width="400px" ><img src="images/Natural%20Scale%20Percentage%20in%202001.png" width="400px" >
 
  However, we wanted to show this quantifiably. Therefore, having regression lines for the 1999 data and the 2001 data, we created a bootstrap on the 1999 regression data (with 10000 resamples) and got the following 90% confidence interval for the slope and intercept for the `admitted to applied` line:
 
@@ -203,7 +203,7 @@ Just from the eye test, the slopes across the graphs seem to be significantly di
 5th percentile intercept: 50.856512445888484, 95th percentile intercept: 70.49255558690935
 ```
 
-Our regression for the 2001 `admitted to applied` data is `-1.97x + 45.71`, so both the slope and the intercept are outside the 90% confidence interval. Therefore, we can say with 90% confidence that the models for the 1999 data and the 2001 data are different, and the passing of the *Ortiz*-*Pacheco*-*Poochigian*-*Vasconcellos Cal Grant Act* correlates with a significant change in admissions rate as compared to Household income. One possibility is that lower income students were more confident in their ability to receive financial aid after the grand, so they applied in higher numbers, affecting the distribution.
+Our regression for the 2001 `admitted to applied` data is `-1.97x + 45.71`, so both the slope and the intercept are outside the 90% confidence interval. Therefore, we can say with 90% confidence that the models for the 1999 data and the 2001 data are different, and the passing of the *Ortiz*-*Pacheco*-*Poochigian*-*Vasconcellos Cal Grant Act* correlates with a significant change in admissions rate as compared to Household income. One possibility is that lower income students were more confident in their ability to receive financial aid after the Grant, so they applied in higher numbers, affecting the distribution.
 
 
 
@@ -213,16 +213,16 @@ After having examined the impact county, ethnicity, GPA, and economic standing o
 
 
 
-<img src="/Users/mkhattar/githubStuff/calAdmissions/images/berkeley_2017_enrolled.png" width="500px" >
+<img src="images/berkeley_2017_enrolled.png" width="500px" >
 
-<img src="/Users/mkhattar/githubStuff/calAdmissions/images/berkeley_2017_enrolled_transfers.png" width="500px" >
+<img src="images/berkeley_2017_enrolled_transfers.png" width="500px" >
 
 
 
-It’s striking how large a proportion Asian students occupy of the UC Berkeley Class of 2021. Minority groups, including Hispanic/Latino, African American, American Indian, and International students, occupy less than 20% of the population group. Transfer students, however, have a much more balanced population distributino, featuring significant and comparable amounts of Asian, Hispanic/Latino, International, and White students. We reserve no judgments for whether this is a positive or negative development; it’s just something to consider and keep in mind when thinking about the decisions the ASUC makes and UC Berkeley’s identity in general. 
+It’s striking how large a proportion Asian students occupy of the UC Berkeley Class of 2021. Minority groups, including Hispanic/Latino, African American, American Indian, and International students, occupy less than 20% of the population group. Transfer students, however, have a much more balanced population distribution, featuring significant and comparable amounts of Asian, Hispanic/Latino, International, and White students. We reserve no judgments for whether this is a positive or negative development; it’s just something to consider and keep in mind when thinking about the decisions the ASUC makes and UC Berkeley’s identity in general. 
 
 ## Conclusion
 
 
 
-This project was an exploratory look at UC admissions data over the twenty years, trying to consider several different parameters—county population, county income, ethnicity in terms of admission rate and yield rate over time, GPA trends over time, the impact of the 2000 Cal Grant Act on admission rates—and their impacts on admissions trends through the form of visualizations. We hope that our analysis was insightful and prompted some thought on the current college admissions project!
+This project was an exploratory look at UC admissions data over the twenty years, trying to consider several different parameters—county population, county income, ethnicity in terms of admission rate and yield rate over time, GPA trends over time, the impact of the 2000 Cal Grant Act on admission rates—and their impacts on admissions trends through the form of visualizations. We hope that our analysis was insightful and prompted some thought on the current college admissions process!
